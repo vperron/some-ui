@@ -1,6 +1,8 @@
 import _ from 'lodash'
 import L from 'leaflet'
 
+import './img/img.jpg'
+
 import './maps/leaflet-google.js'
 import GoogleMapsApiLoader from './maps/maps-loader.js'
 
