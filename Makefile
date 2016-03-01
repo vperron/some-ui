@@ -1,11 +1,8 @@
-PACKAGE = alacarte2
-
-IS_APP = yes
-SERVE_PORT = 3341
+SYSTEMATIC_PATH = node_modules/systematic
 
 # Templated part: do not change.
 #
-include node_modules/systematic/js.mk
+include $(SYSTEMATIC_PATH)/mk/js.mk
 
 DOCS_MK = $(shell makefile_path docs.mk 2>/dev/null)
 ifneq ($(DOCS_MK),)
