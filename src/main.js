@@ -22,7 +22,7 @@ _.defaultsDeep(window.__SETTINGS__, {
 L.Icon.Default.imagePath = 'dist/images'
 
 import 'leaflet/dist/leaflet.css'
-import './map.css'
+import './style/map.scss'
 
 console.log('hello truc')
 
