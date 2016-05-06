@@ -12,7 +12,7 @@ export default function () {
     if (!isLoading) {
       window.initMap = globalResolve
       let script = document.createElement('script')
-      script.src = '//maps.googleapis.com/maps/api/js?language=en&callback=initMap'
+      script.src = 'http://maps.googleapis.com/maps/api/js?language=en&callback=initMap'
       document.body.appendChild(script)
       isLoading = true
     }

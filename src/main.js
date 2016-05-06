@@ -1,4 +1,4 @@
-import _ from 'lodash'
+// import _ from 'lodash'
 import L from 'leaflet'
 
 import './img/img.jpg'
@@ -6,7 +6,7 @@ import './img/img.jpg'
 import './maps/leaflet-google.js'
 import GoogleMapsApiLoader from './maps/maps-loader.js'
 
-const MAP_DIV_ID = 'map'
+const MAP_DIV_ID = 'fabulousmap'
 
 const MAP_SETTINGS = {
   maxZoom: 20,
@@ -17,16 +17,14 @@ const MAP_SETTINGS = {
   fadeAnimation: false,
 }
 
-_.defaultsDeep(window.__SETTINGS__, {
-  map: MAP_SETTINGS,
-})
+// window.__SETTINGS__.map = MAP_SETTINGS
+
 
 L.Icon.Default.imagePath = 'dist/images'
 
 import 'leaflet/dist/leaflet.css'
 import './map.css'
 
-console.log('hello truc')
 
 function createMapElement (id) {
   const mapElement = document.createElement('div')

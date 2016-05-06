@@ -1,4 +1,4 @@
-const webpackDefaults = require('systematic').webpack_defaults(__dirname)
+const webpackDefaults = require('systematic').webpack_get_defaults(__dirname)
 
 // eventual overrides
 
