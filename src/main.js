@@ -17,19 +17,19 @@ const MAP_SETTINGS = {
   fadeAnimation: false,
 }
 
-// window.__SETTINGS__.map = MAP_SETTINGS
-
 
 L.Icon.Default.imagePath = 'dist/images'
 
 import 'leaflet/dist/leaflet.css'
-import './map.css'
+import mapStyles from './map.css'
 
 
 function createMapElement (id) {
   const mapElement = document.createElement('div')
   mapElement.id = id
   document.body.appendChild(mapElement)
+  // Reset style
+  document.getElementById(MAP_DIV_ID).classList.add(mapStyles.map)
 }
 
 createMapElement(MAP_DIV_ID)
